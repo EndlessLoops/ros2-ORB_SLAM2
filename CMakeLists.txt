@@ -19,6 +19,7 @@ find_package(cv_bridge REQUIRED)
 find_package(message_filters REQUIRED)
 find_package(Pangolin REQUIRED)
 find_package(ORB_SLAM2 REQUIRED)
+find_package(OpenCV 4.0 QUIET)
 
 add_executable(mono 
   src/monocular/mono.cpp
@@ -36,7 +37,7 @@ add_executable(stereo
   src/stereo/stereo.cpp
   src/stereo/stereo-slam-node.cpp
 )
-ament_target_dependencies(stereo rclcpp sensor_msgs cv_bridge message_filters ORB_SLAM2 Pangolin)
+ament_target_dependencies(stereo rclcpp sensor_msgs cv_bridge message_filters ORB_SLAM2 Pangolin OpenCV)
 
 install(TARGETS mono rgbd stereo
   DESTINATION lib/${PROJECT_NAME})
