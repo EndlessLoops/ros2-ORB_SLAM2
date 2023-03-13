@@ -1,7 +1,7 @@
 ### Update
  - New testing Background : Ubuntu 22.04 + ROS Humble + OpenCV 4.5.4
 
- - Matching ORB_SLAM2 source code : https://github.com/EndlessLoops/ORB_SLAM2/tree/ubuntu2204-test
+ - Matching ORB_SLAM2 source code : https://github.com/EndlessLoops/ORB_SLAM2/
 
 # ros2-ORB_SLAM2
 ROS2 node wrapping the ORB_SLAM2 library
